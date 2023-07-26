@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Smoothie Machine</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <h1>Smoothie Order Form</h1>
+    <form id="smoothieForm">
+        <label for="flavor">Flavor:</label>
+        <select id="flavor" name="flavor">
+            <option value="strawberry">Strawberry</option>
+            <option value="banana">Banana</option>
+            <option value="mango">Mango</option>
+        </select>
+
+        <label for="size">Size:</label>
+        <input type="radio" id="small" name="size" value="Small">
+        <label for="small">Small</label>
+        <input type="radio" id="medium" name="size" value="Medium">
+        <label for="medium">Medium</label>
+        <input type="radio" id="large" name="size" value="Large">
+        <label for="large">Large</label>
+
+        <label for="toppings">Toppings (hold CTRL to select multiple):</label>
+        <select id="toppings" name="toppings" multiple>
+            <option value="chocolateChips">Chocolate Chips</option>
+            <option value="honey">Honey</option>
+            <option value="nuts">Nuts</option>
+            
+        </select>
+
+        <input type="submit" value="Order" id="orderButton">
+    </form>
+
+    <div id="smoothieOutput">
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
